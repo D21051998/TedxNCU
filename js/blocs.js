@@ -183,12 +183,17 @@ function setUpLightBox()
 		e.preventDefault();
 		targetLightbox = $(this);
 		var captionData ='<p class="lightbox-caption">'+$(this).attr('data-caption')+'</p>';
+		var shareData = '<p class="lightbox-share">'+$(this).attr('data-share')+'</p>';
 		if(!$(this).attr('data-caption')) // No caption caption data
 		{
 			captionData = '';
 		}
+		if(!$(this).attr('data-share')) // No share data
+		{
+			shareData = '';
+		}
 		
-		var customModal = $('<div id="lightbox-modal" class="modal fade"><div class="modal-dialog"><div class="modal-content '+$(this).attr('data-frame')+'"><button type="button" class="close close-lightbox" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body"><a href="#" class="prev-lightbox" aria-label="prev"></a><a href="#" class="next-lightbox" aria-label="next"></a><img id="lightbox-image" class="img-responsive" src="'+$(this).attr('data-lightbox')+'">'+captionData+'</div></div></div></div>');
+		var customModal = $('<div id="lightbox-modal" class="modal fade"><div class="modal-dialog"><div class="modal-content '+$(this).attr('data-frame')+'"><button type="button" class="close close-lightbox" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><div class="modal-body"><a href="#" class="prev-lightbox" aria-label="prev"></a><a href="#" class="next-lightbox" aria-label="next"></a><img id="lightbox-image" class="img-responsive" src="'+$(this).attr('data-lightbox')+'">'+captionData+shareData+'</div></div></div></div>');
 		$('body').append(customModal);
 		$('#lightbox-modal').modal('show');
 		

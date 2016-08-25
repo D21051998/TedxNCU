@@ -448,8 +448,22 @@ a[data-lightbox]:hover img{
 	background: rgba(0,0,0,.5);
 	position: absolute;
 	left: 15px;
+	right: 50%;
+	bottom: 5px;
+}
+.lightbox-share{
+	padding: 15px;
+	color: #FFF;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	text-align: right;
+	left: 50%;
 	right: 15px;
 	bottom: 5px;
+}
+.lightbox-share > a > span {
+	font-size: 30px;
+	color: whitesmoke;
 }
 .close-lightbox{
 	display: none;
