@@ -739,3 +739,15 @@ a[data-lightbox]:hover img{
         display:none;
     }
 }
+
+.ticketing {
+	max-width: 150px;
+}
+
+#ticketCollapse {
+	margin-top: 40px;
+}
+
+#ticketCollapse div {
+	border-right: 1px solid white;
+}
