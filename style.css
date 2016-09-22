@@ -751,3 +751,7 @@ a[data-lightbox]:hover img{
 #ticketCollapse div {
 	border-right: 1px solid white;
 }
+
+.sponsors {
+	max-width: 250px;
+}
