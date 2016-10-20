@@ -27,10 +27,7 @@ function init(id, endTime) {
 		hoursSpan.innerHTML = t.hours;
 		minutesSpan.innerHTML = t.minutes;
 		secondsSpan.innerHTML = t.seconds;
-		/*clock.innerHTML = 'Days: ' + t.days +
-						' Hours: ' + t.hours +
-						' Minutes: ' + t.minutes +
-						' Seconds: ' + t.seconds;*/
+		
 		if (t.total <= 0) {
 			clearInterval(timeInterval);
 		}
