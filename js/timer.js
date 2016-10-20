@@ -34,4 +34,4 @@ function init(id, endTime) {
 	}, 1000);
 }
 
-init('clock', 'October 22 2016 08:30:00 GMT+0530');
+init('clock', 'October 22 2016 10:00:00 GMT+0530');
